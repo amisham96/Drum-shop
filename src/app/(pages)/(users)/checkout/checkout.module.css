@@ -1,0 +1,7 @@
+.main_heading {
+  font-family: var(--font-bebas-neue);
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin: 2.5rem;
+  margin-bottom: 0;
+}

@@ -1,0 +1,175 @@
+.main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.4)), url('/images/signup/signup_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 1px 0;
+}
+
+.step_container {
+  width: min(80vw, 450px);
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+  background-color: rgba(167, 167, 167, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+}
+
+.step_container h1 {
+  color: white;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.step_container input {
+  padding: 0.7rem 1rem;
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.update_email_container input:focus {
+  border-bottom: 3px solid var(--charcoal);
+  padding-bottom: 0.6rem;
+}
+
+.form_control {
+  position: relative;
+  width: 100%;
+  margin: 1.2rem 0;
+}
+
+.input_invalid {
+  border-bottom: 4px solid red !important;
+  padding-bottom: 0.55rem !important;
+}
+
+.input_valid {
+  border-bottom: 4px solid green !important;
+  padding-bottom: 0.55rem !important;
+}
+
+.input_error_message {
+  font-size: 0.9rem;
+  color: red;
+  display: inline-block;
+  margin-top: 10px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.display_error_message {
+  display: inline-block;
+}
+
+.update_email_container button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  background-color: var(--golden-yellow);
+  margin: 1.2rem 0;
+}
+
+.update_email_info {
+  color: white;
+  text-align: center;
+}
+
+.update_email_info span {
+  text-decoration: underline;
+  display: block;
+}
+
+/* otp input styles */
+.otp_intput_container p {
+  color: var(--white);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.otp_inputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  gap: 10px;
+}
+
+.otp_inputs input {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.otp_other_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.otp_other_info span {
+  color: var(--golden-yellow);
+}
+
+.otp_other_info p:last-child span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.disable_resend_otp {
+  text-decoration: none !important;
+  color: gray !important;
+  cursor: not-allowed !important;
+}
+
+.otp_actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.otp_actions button {
+  margin: 1rem 0 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.otp_actions button:first-child {
+  background-color: var(--golden-yellow);
+}
+
+.otp_actions button:last-child {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.otp_inputs input::-webkit-outer-spin-button,
+.otp_inputs input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 500px) {
+  .udpate_email_container {
+    padding: 2rem 1rem;
+  }
+}

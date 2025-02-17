@@ -1,0 +1,125 @@
+.main section {
+  padding: 2rem 3rem;
+  margin: 2rem auto;
+}
+
+/* brand image container */
+.brand_container {
+  width: 100%;
+  background-color: var(--golden-yellow);
+}
+
+.main section h1 {
+  font-family: var(--font-bebas-neue);
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.brand_container p {
+  margin-bottom: 1rem;
+}
+
+.brand_image_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand_image {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background-color: var(--charcoal);
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 1;
+  transition: box-shadow 0.3s;
+}
+
+.brand_image:hover {
+  box-shadow: 1px 4px 16px 0px rgba(0,0,0,0.75);
+}
+
+.brand_container a:last-child {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.brand_container a:last-child:hover {
+  text-decoration: underline;
+}
+
+/* convinient purchase section */
+.purchase_info_container {
+  padding: 2rem 3rem;
+}
+
+.purchase_info_point_container {
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.purchase_info_point {
+  text-align: center;
+  border: 2px solid var(--charcoal);
+  border-radius: 8px;
+}
+
+.purchase_info_point h2 {
+  font-family: var(--font-bebas-neue);
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--white);
+  background-color: var(--charcoal);
+  padding: 1rem;
+}
+
+.purchase_info_point p {
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  align-self: center;
+}
+
+/* 'shop by category' container */
+.shop_by_category_container h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .brand_image {
+    width: 150px;
+    height: 100px;
+  }
+
+  .purchase_info_point h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .brand_image_container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px
+  }
+
+  .purchase_info_point_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .purchase_info_point_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

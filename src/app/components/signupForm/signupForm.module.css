@@ -1,0 +1,224 @@
+.step_container {
+  width: min(80vw, 450px);
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(167, 167, 167, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+}
+
+/* sign up form styles */
+/* Form one */
+.signup_form_one {
+  width: 100%;
+}
+
+.step_container h1 {
+  color: white;
+  margin: 1rem 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+.signup_form_control input {
+  padding: 0.7rem 1rem;
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.signup_form_control input:focus {
+  border-bottom: 4px solid var(--charcoal);
+  padding-bottom: 0.55rem;
+}
+
+.signup_form_control {
+  position: relative;
+  margin: 1.8rem 0;
+}
+
+.input_invalid {
+  border-bottom: 4px solid red !important;
+  padding-bottom: 0.55rem !important;
+}
+
+.input_valid {
+  border-bottom: 4px solid green !important;
+  padding-bottom: 0.55rem !important;
+}
+
+.input_error_message {
+  font-size: 0.8rem;
+  color: red;
+  display: none;
+  margin-top: 10px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.display_error_message {
+  display: inline-block;
+}
+
+.signup_form_one button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  background-color: var(--golden-yellow);
+}
+
+.signup_info_message {
+  color: var(--white);
+  margin: 1.5rem 0 3rem 0;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.signup_info_message span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.step_container input::-webkit-outer-spin-button,
+.step_container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* otp input step */
+.otp_intput_container p {
+  color: var(--white);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.otp_inputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  gap: 10px;
+}
+
+.otp_inputs input {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.otp_other_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.otp_other_info span {
+  color: var(--golden-yellow);
+}
+
+.otp_other_info p:last-child span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.disable_resend_otp {
+  text-decoration: none !important;
+  color: gray !important;
+  cursor: not-allowed !important;
+}
+
+.otp_actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.otp_actions button {
+  margin: 1rem 0 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.otp_actions button:first-child {
+  background-color: var(--golden-yellow);
+}
+
+.otp_actions button:last-child {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+/* password input */
+.password_container p {
+  margin-top: 1rem;
+  color: var(--white);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.password_input_control {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.password_submit_btn {
+  width: 100%;
+  margin: 1rem 0 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--golden-yellow);
+}
+
+.eye_icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .otp_inputs input {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .step_container {
+    padding: 2rem 1rem;
+  }
+
+  .otp_other_info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .otp_inputs input {
+    width: 35px;
+    height: 35px;
+  }
+}

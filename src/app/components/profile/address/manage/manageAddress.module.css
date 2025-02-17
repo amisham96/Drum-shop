@@ -1,0 +1,76 @@
+.main {
+  padding: 3rem;
+  width: 100%;
+}
+
+.main h1 {
+  color: var(--tone-black);
+}
+
+.loader {
+  width: min-content;
+  margin: 3rem auto;
+}
+
+.address_container {
+  width: 80%;
+  border-top: 2px solid var(--charcoal);
+  border-bottom: 2px solid var(--charcoal);
+  margin: 2rem 0;
+}
+
+.address_inner_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address_actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.address_actions div {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: 3px 5px 16px -1px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.address {
+  margin: 2rem 1.5rem;
+}
+
+.address div {
+  margin: 4px 0;
+}
+
+.first_line span {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding-right: 0.7rem;
+}
+
+.name, .phone {
+  border-right: 2px solid var(--charcoal);
+}
+
+.phone, .address_type {
+  font-weight: 600;
+  padding-left: 0.7rem;
+}
+
+.add_address_btn {
+  width: 80%;
+  padding: 1rem;
+  background-color: transparent;
+  color: var(--charcoal);
+  border: 3px solid var(--charcoal);
+  border-radius: 8px;
+}

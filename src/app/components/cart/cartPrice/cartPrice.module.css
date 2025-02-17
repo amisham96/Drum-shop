@@ -1,0 +1,114 @@
+.cart_price_container {
+  border: 1px solid;
+  padding: 2rem 1rem;
+  width: 450px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.entry_container {
+  padding: 1rem 0 0.4rem;
+  border-bottom: 1px solid;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.entry_val {
+  font-weight: bold;
+}
+
+.green_font {
+  color: #009E60;
+}
+
+.total_price_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.checkout_btn {
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  width: 100%;
+  background-color: var(--golden-yellow);
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart_price_container {
+    width: 350px;
+  }  
+}
+
+@media screen and (max-width: 1000px) {
+  .cart_price_container {
+    width: min(450px, 80vw);
+  }  
+}
+
+/* error container styles */
+.error_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error_inner_container {
+  width: min(600px, 80%);
+  background-color: white;
+  border-radius: 8px;
+  max-height: 700px;
+  overflow: auto;
+}
+
+.error {
+  margin: 1.4rem 0;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.note {
+  border-bottom: 1px solid var(--tone-black);
+  padding: 1rem 2rem;
+}
+
+.note p {
+  color: var(--tone-black);
+}
+
+.error_actions {
+  margin: 0 2rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.error_actions button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.error_actions button:first-of-type {
+  background-color: var(--charcoal);
+  color: white;
+}
+
+.error_actions button:last-of-type {
+  background-color: transparent;
+  color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+}

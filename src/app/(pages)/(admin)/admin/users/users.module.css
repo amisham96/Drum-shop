@@ -1,0 +1,155 @@
+.main {
+  width: 100%;
+  position: relative;
+}
+
+.mini_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.mini_header h1 {
+  width: fit-content;
+}
+
+.mini_header button {
+  width: max-content;
+  padding: 10px;
+  margin-right: 1rem;
+  border-radius: 6px;
+  background-color: var(--golden-yellow);
+}
+
+/* admin form styles */
+.add_admin_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add_admin_inner_container {
+  width: 450px;
+  padding: 3rem;
+  margin: 2rem auto;
+  border-radius: 6px;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+}
+
+.add_admin_container h2 {
+  text-align: center;
+}
+
+.form_part {
+  margin-right: 1rem;
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0; 
+}
+
+.form_control label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form_control input, 
+.form_control select {
+  margin: 10px 0;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.admin_form_actions {
+  display: flex;
+}
+
+.admin_form_actions button {
+  width: 100%;
+  padding: 10px;
+  margin-right: 1rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin_form_actions button:first-of-type {
+  background-color: var(--golden-yellow);
+}
+
+.admin_form_actions button:last-of-type {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.error_msg {
+  color: red;
+}
+
+.input_invalid {
+  border: 2px solid red !important;
+}
+
+.input_valid {
+  border: 2px solid green !important;
+}
+
+/* admin table styles */
+.admin_container {
+  display: flex;
+  width: 800px;
+  margin: 1rem auto;
+  justify-content: center;
+}
+
+.admin_table {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 7px;
+  border-collapse: collapse;
+  background-color: var(--white);
+}
+
+.admin_table td, .admin_table th {
+  text-align: center;
+  padding: 10px 25px;
+  border-bottom: 1px solid var(--light-gray);
+  max-width: 350px;
+}
+
+.admin_table td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.admin_user_actions {
+  display: flex;
+}
+
+.admin_user_actions button {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 7px 17px -7px rgba(0,0,0,0.5);
+}

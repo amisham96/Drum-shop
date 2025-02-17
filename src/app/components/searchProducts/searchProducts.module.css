@@ -1,0 +1,19 @@
+.search_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  width: 400px;
+  height: 40px;
+}
+
+.search_container input {
+  border: none;
+  outline: none;
+}
+
+.search_icon {
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+.actions_cell svg {
+  display: inline-block;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

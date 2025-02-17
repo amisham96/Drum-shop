@@ -1,0 +1,22 @@
+.search_container {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.search_container input,
+.search_container select {
+  padding: 0.3rem;
+  border: 1px solid var(--charcoal);
+  outline: none;
+  border-radius: 4px;
+  margin: 0 10px;
+  background-color: transparent;
+}
+
+.search_container button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 0 0.5rem;
+  background-color: var(--charcoal);
+  color: var(--white);
+}

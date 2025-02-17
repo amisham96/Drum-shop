@@ -1,0 +1,30 @@
+/* 'contact us' container */
+.need_help_container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/images/signup/signup_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.need_help_container h1 {
+  font-family: var(--font-bebas-neue);
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.need_help_container p {
+  color: var(--white);
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.need_help_container button {
+  width: 200px;
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 6px;
+}

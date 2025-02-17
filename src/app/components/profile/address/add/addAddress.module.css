@@ -1,0 +1,142 @@
+.address_form_outer_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address_form_container {
+  width: 80%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* form styles */
+.add_address_form {
+  display: flex;
+  width: 100%;
+  padding: 1rem 2rem;
+  gap: 2rem;
+}
+
+.left_grid, .right_grid {
+  width: 50%;
+}
+
+.popup_heading {
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.popup_heading h1 {
+  font-weight: 600;
+  color: var(--tone-black);
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0; 
+}
+
+.form_control label {
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--tone-black);
+}
+
+.form_control input, 
+.form_control select,
+.form_control textarea {
+  margin: 10px 0;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.form_control input[type="radio"] {
+  width: min-content;
+}
+
+.form_control textarea {
+  resize: none;
+  height: 100px;
+}
+
+.radio_input_container div {
+  width: max-content;
+}
+
+.radio_input_container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.cancel_icon {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.error_msg {
+  color: red;
+}
+
+.input_invalid {
+  border: 2px solid red !important;
+}
+
+.input_valid {
+  border: 2px solid green !important;
+}
+
+.add_address_actions {
+  display: flex;
+  padding: 0rem 2rem 2rem;
+}
+
+.add_address_actions button {
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+}
+
+.add_address_actions button:first-of-type {
+  background-color: var(--charcoal);
+  color: var(--white);
+}
+
+.add_address_actions button:last-of-type {
+  margin-left: 1rem;
+  background-color: var(--white);
+  color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+}
+
+@media screen and (max-width: 600px) {
+  .address_form_container {
+    height: 600px;
+    overflow: auto;
+  }
+
+  .add_address_form {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .left_grid, .right_grid {
+    width: 100%;
+  }
+}

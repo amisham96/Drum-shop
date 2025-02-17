@@ -1,0 +1,217 @@
+.main {
+  flex-grow: 1;
+  padding: 3rem;
+  background-color: var(--light-gray);
+}
+
+.main h1 {
+  margin: 10px auto;
+  width: fit-content;
+}
+
+/* form styles */
+.edit_product_form {
+  width: 800px;
+  margin: 2rem auto;
+}
+
+.form_part {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0; 
+}
+
+.form_control label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.form_control input, 
+.form_control select,
+.form_control textarea {
+  margin: 10px 0;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.form_control textarea {
+  resize: vertical;
+}
+
+.images_added,
+.images_deleted {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0 1rem;
+  gap: 1rem;
+  position: relative;
+}
+
+.images_added img,
+.images_deleted img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.images_added img:hover {
+  opacity: 0.5;
+}
+
+.images_added span {
+  position: absolute;
+  top: -25px;
+  left: 15px;
+  font-weight: bold;
+}
+
+.images_deleted {
+  margin: 1rem 0;
+}
+
+.submit_btn {
+  width: 150px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+.submit_btn span {
+  color: white;
+}
+
+.error_msg {
+  color: red;
+}
+
+.input_invalid {
+  border: 2px solid red !important;
+}
+
+.input_valid {
+  border: 2px solid green !important;
+}
+
+/* display added variants styles */
+.variants_added {
+  margin: 1rem 0;
+}
+
+.variants_added div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.variants_added span {
+  display: inline-block;
+  margin: 0 5px;
+  background-color: var(--light-gray);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.delete_variant {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.add_variant_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  background-color: transparent;
+  color: rgba(0, 91, 211, 1); 
+}
+
+/* add variant sub form */
+.variant_sub_form {
+  margin: 1.5rem 0;
+  border: 1px solid var(--light-gray);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.variant_sub_form button {
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+.variant_val_input div {
+  display: flex;
+  align-items: center;
+}
+
+.variant_val_input input {
+  margin-right: 10px;
+}
+
+.variant_val_input svg {
+  cursor: pointer;
+}
+
+.variant_inputs div {
+  display: flex;
+  gap: 0.5rem;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background-color: rgba(128, 128, 128, 0.5);
+  margin-right: 10px;
+}
+
+.variant_sub_form button {
+  margin-right: 10px;
+}
+
+/* variant groups styles */
+.form_part h4 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+  
+.table td, .table th {
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.table td {
+  width: 150px;
+}
+
+.table thead {
+  background-color: var(--light-gray);
+}
+
+.table input {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid gray;
+}

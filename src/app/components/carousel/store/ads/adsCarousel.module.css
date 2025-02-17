@@ -1,0 +1,43 @@
+.ads_carousel_container {
+  margin: 2rem 0;
+}
+
+.ads_carousel_slide {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+}
+
+.slide_content {
+  position: relative;
+  width: clamp(400px, 70%, 600px);
+  color: white;
+  text-align: left;
+  top: 25%;
+  left: 10%;
+}
+
+.slide_content p {
+  font-family: var(--font-bebas-neue);
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.slide_content button {
+  width: 400px;
+  margin-top: 10px;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  background: var(--white);
+  border-radius: 4px;
+}
+
+.slide_content_2 {
+  top: 60%;
+}
+
+.ads_embla_carousel {
+  width: clamp(400px, 90vw, 1400px);
+}

@@ -1,0 +1,186 @@
+.product_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  padding: 6rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* left container styles */
+.left_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.images_container {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.all_images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* WebKit browsers (Chrome, Safari) */
+.all_images::-webkit-scrollbar {
+  width: 12px; /* width of the vertical scrollbar */
+}
+
+.all_images::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the scrollbar track */
+}
+
+.all_images::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the scrollbar thumb */
+  border-radius: 10px; /* roundness of the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* creates padding around the thumb */
+}
+
+.all_images::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+.all_images {
+  scrollbar-width: thin; /* auto, thin, or none */
+  scrollbar-color: #888 #f1f1f1; /* thumb color and track color */
+}
+
+/* For Internet Explorer and Edge */
+.all_images {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.small_img {
+  cursor: pointer;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.small_img img {
+  width: 100%;
+  height: inherit;
+}
+
+.display_img img {
+  width: 100%;
+}
+
+.active_img {
+  border: 2px solid black;
+}
+
+.display_img {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.cta_container {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.cta_container button {
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.add_to_cart {
+  width: 50%;
+  background-color: var(--charcoal);
+  color: var(--white);
+}
+  
+.call_to_order {
+  /* width: 50%; */
+  flex: 1;
+  background-color: var(--white);
+  color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+}
+
+/* right container */
+.right_container {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+  
+.description {
+  margin: 1rem 0;
+  color: #5D5C5C;
+}
+
+.selling_price {
+  font-size: 2.3rem;
+  margin: 1rem 0;
+}
+
+.variant {
+  margin: 1.3rem 0;
+}
+
+.variant h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.variant button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+  border: 1px solid var(--charcoal);
+  background-color: var(--white);
+  color: var(--charcoal);
+}
+
+.active_variant {
+  background-color: var(--charcoal) !important;
+  color: var(--white) !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .product_container {
+    margin: 6rem 2rem;
+  }
+
+  .images_container {
+    height: 450px;
+  }
+
+  .right_container {
+    padding: 2rem;
+  }
+
+  .display_img {
+    width: 450px;
+    height: 450px;
+  }
+}

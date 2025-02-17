@@ -1,0 +1,87 @@
+
+/* sidebar styles */
+.profile_sidebar {
+  width: 300px;
+  min-height: 100vh;
+  background-color: var(--charcoal);
+  color: white;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.full_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.full_name p {
+  font-size: 1.8rem;
+}
+
+.menu_container {
+  margin-top: 2rem;
+}
+
+.menu_entry_container {
+  cursor: pointer;
+}
+
+.menu_entry {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.menu_entry_active .menu_entry {
+  background-color: var(--tone-black);
+}
+
+.menu_entry_active .arrow_icon {
+  transform: rotateZ(90deg);
+}
+
+.entry_icon {
+  margin-right: 1rem;
+}
+
+.arrow_icon {
+  position: absolute;
+  right: 10px;
+}
+
+.submenu_entry {
+  display: none;
+}
+
+.menu_entry_active .submenu_entry {
+  display: block;
+}
+
+.submenu_entry ul {
+  list-style: none;
+  width: 100%;
+  margin-left: 4rem;
+}
+
+.submenu_entry ul li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.submenu_entry_active {
+  color: var(--golden-yellow);
+}
+
+.loader_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+

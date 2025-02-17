@@ -1,0 +1,8 @@
+Main stuff
+1. Entire checkout process.
+2. Integration of delivery process.
+3. Password and reset. (Replace with otp login)
+4. Manage admins (create and roles)
+
+Additional stuff
+1. Responsiveness.

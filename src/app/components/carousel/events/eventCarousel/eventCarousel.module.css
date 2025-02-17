@@ -1,0 +1,53 @@
+.events_carousel_container {
+  margin: 3rem 0;
+}
+
+.event_carousel_slide {
+  position: relative;
+  height: inherit;
+  width: 100%;
+  cursor: pointer;
+}
+
+.event_carousel_slide * {
+  width: 100%;
+  height: inherit;
+}
+
+.title_name {
+  width: 150px;
+  color: white;
+  font-size: 5rem;
+  text-transform: capitalize;
+  font-family: var(--font-bebas-neue);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  line-height: 0.9;
+}
+
+@media screen and (max-width: 1000px) {
+  .title_name {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title_name {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title_name {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title_name {
+    font-size: 2rem;
+  }
+}
+
+

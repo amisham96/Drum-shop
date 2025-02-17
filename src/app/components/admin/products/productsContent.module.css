@@ -1,0 +1,91 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--light-gray);
+}
+
+.proudcts_table {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 7px;
+  border-collapse: collapse;
+  background-color: var(--white);
+}
+
+.proudcts_table td, .proudcts_table th {
+  text-align: left;
+  padding: 10px 25px;
+  border-bottom: 1px solid var(--light-gray);
+  max-width: 350px;
+}
+
+.proudcts_table td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.loader {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: center;
+}
+
+
+/* show delete popup */
+.delete_popup_container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.delete_popup {
+  position: fixed;
+  padding: 2rem;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.delete_popup p {
+  font-size: 1.2rem;
+}
+
+.delete_popup_actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.delete_popup_actions button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  outline: none;
+}
+
+.delete_popup_actions button:first-of-type {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+}
+
+.delete_popup_actions button:first-of-type:hover {
+  background-color: red;
+  color: var(--white);
+  border: 1px solid red;
+}
+
+.delete_popup_actions button:last-of-type {
+  background-color: var(--charcoal);
+  color: var(--white);
+}

@@ -1,0 +1,37 @@
+.main {
+  padding: 2rem 3rem;
+  width: 100%;
+}
+
+.outer_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.products_outer_container {
+  padding: 2rem;
+}
+
+.product {
+  margin: 1rem 0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.product > div {
+  padding: 0;
+}
+
+.address_container {
+  padding: 2rem;
+}
+
+.address_info {
+  margin-top: 1rem;
+}
+
+.address_info .label {
+  font-weight: bold;
+}

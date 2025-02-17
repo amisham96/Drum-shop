@@ -1,0 +1,25 @@
+.brand_carousel {
+  width: 100%;
+  position: relative;
+  --slide-height: 200px;
+  --slide-spacing: 6rem;
+  --slide-size: 300px;
+}
+
+.brand_carousel__viewport {
+  overflow: hidden;
+}
+
+.brand_carousel__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.brand_carousel__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  height: var(--slide-height);
+}

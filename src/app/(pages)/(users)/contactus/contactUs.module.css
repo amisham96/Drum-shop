@@ -1,0 +1,139 @@
+.main {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.65) 65%, rgba(0,0,0,0.4) 77%), url('/images/signup/signup_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  padding: 1px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.outer_container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 4rem;
+  gap: 1rem;
+}
+
+/* left container styles */
+.left_container {
+  width: 60%;
+}
+
+.left_container h1 {
+  color: var(--golden-yellow);
+  font-family: var(--font-bebas-neue);
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+  
+.left_container h1 span {
+  color: var(--white);
+  font-family: inherit;
+}
+
+.location {
+  color: var(--golden-yellow);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.location span {
+  color: var(--white);
+}
+
+.description {
+  width: 80%;
+  color: var(--white);
+  margin: 2rem 0;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 1.3rem;
+}
+
+.cta_buttons {
+  display: grid;
+  width: 85%;
+  grid-template-columns: 1fr 1fr 30px;
+}
+
+.visit_store, .make_enquiry {
+  padding: 1rem 3rem;
+  margin: 10px 20px 30px 0;
+  border-radius: 6px;
+}
+
+.make_enquiry {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.socials a svg {
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+/* right container styles */
+.right_container {
+  width: 480px;
+  height: 480px;
+}
+
+.right_container iframe {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1260px) {
+  .left_container h1 {
+    font-size: 4rem;
+  }
+
+  .right_container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .outer_container {
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+
+  .left_container, .right_container {
+    text-align: center;
+    margin: 3rem 0;
+    width: min(600px, 90%);
+  }
+    
+  .description {
+    text-align: center;
+    width: 100%;
+  }
+
+  .cta_buttons {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cta_buttons {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .cta_buttons button {
+    margin: 10px 0;
+  }
+
+  .socials {
+    margin-top: 20px;
+  }  
+}

@@ -1,0 +1,42 @@
+.data_grid_container {
+  margin: 4rem auto;
+  height: auto;
+}
+
+.filter_container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.filter_container button {
+  width: 200px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  /* width: 100%; */
+  margin: 1rem 0; 
+}
+
+.form_control label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form_control select {
+  margin: 10px 0;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}

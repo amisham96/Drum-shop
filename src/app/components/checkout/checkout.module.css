@@ -1,0 +1,79 @@
+.checkout_outer_container {
+  display: grid;
+  grid-template-columns: auto 400px;
+  padding: 2.5rem;
+}
+
+.left_grid {
+  margin-right: 2rem;
+}
+
+/* address section */
+.address_container {
+  border-top: 2px solid var(--tone-black);
+  border-bottom: 2px solid var(--tone-black);
+  padding: 2rem 0;
+}
+
+.address_container h2 {
+  color: var(--tone-black);
+}
+
+.address {
+  margin: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.address input {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.address div {
+  margin: 4px 0;
+}
+
+.first_line span {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding-right: 0.7rem;
+}
+
+.name, .phone {
+  border-right: 2px solid var(--charcoal);
+}
+
+.phone, .address_type {
+  font-weight: 600;
+  padding-left: 0.7rem;
+}
+
+.address_actions {
+  display: inline-block;
+  width: 300px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid var(--charcoal);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* order summary */
+.order_summary_container {
+  border-top: 2px solid var(--tone-black);
+  border-bottom: 2px solid var(--tone-black);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.order_summary_container h2 {
+  color: var(--tone-black);
+}
+
+@media screen and (max-width: 850px) {
+  .checkout_outer_container {
+    display: flex;
+    flex-direction: column;
+  }
+}
