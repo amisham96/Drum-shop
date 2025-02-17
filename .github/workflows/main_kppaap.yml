@@ -8,7 +8,20 @@ on:
     branches:
       - main
   workflow_dispatch:
-
+env:
+  NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL}}
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  REDIS_URL: ${{ secrets. REDIS_URL }}
+  REDIS_TOKEN: ${{ secrets.REDIS_TOKEN }}
+  NEXT_PUBLIC_RECAPTCHA_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_RECAPTCHA_PUBLIC_KEY }}
+  RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}
+  JWT_SECRET: ${{ secrets.JWT_SECRET }}
+  NODE_ENV: ${{ secrets.NODE_ENV }}
+  NEXT_COMMUNICATION_SERVICES_CONNECTION_STRING: ${{ secrets.NEXT_COMMUNICATION_SERVICES_CONNECTION_STRING }}
+  NEXT_RAZORPAY_KEY_ID: ${{ secrets.NEXT_RAZORPAY_KEY_ID }}
+  NEXT_RAZORPAY_SECRET_KEY: ${{ secrets.NEXT_RAZORPAY_SECRET_KEY }}
+  APPLICATION_PUBLISH_PROFILE: ${{ secrets.APP_PUBLISH_PROFILE }}
+  WEBAPP_NAME: ${{ secrets.WEBAPP_NAME }}
 jobs:
   build:
     runs-on: ubuntu-latest
