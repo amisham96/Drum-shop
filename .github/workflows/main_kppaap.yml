@@ -22,6 +22,7 @@ env:
   NEXT_RAZORPAY_SECRET_KEY: ${{ secrets.NEXT_RAZORPAY_SECRET_KEY }}
   APPLICATION_PUBLISH_PROFILE: ${{ secrets.APP_PUBLISH_PROFILE }}
   WEBAPP_NAME: ${{ secrets.WEBAPP_NAME }}
+  
 jobs:
   build:
     runs-on: ubuntu-latest
